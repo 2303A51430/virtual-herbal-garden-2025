@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Herbal Garden</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/loaders/GLTFLoader.js"></script>
+    <script type="module" src="herbs3d.js"></script>
+</head>
+<body>
+    <header>
+        <img src="circular_image_logo.png" alt="Virtual Herbal Garden Logo" class="logo">
+        <h1>Virtual Herbal Garden</h1>
+        <nav>
+            <a href="#plants">Explore Plants</a>
+            <a href="#search">Search & Filter</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Welcome to the Virtual Herbal Garden</h2>
+            <p>
+                Medicinal plants have been used for centuries as a natural remedy for various ailments. 
+                They are the foundation of many traditional healing practices, including Ayurveda, Homeopathy, 
+                and Traditional Chinese Medicine (TCM). With our Virtual Herbal Garden, you can explore 
+                the healing power of nature from the comfort of your home.
+            </p>
+            <p>
+                🌿 **Discover:** Learn about the medicinal benefits, habitat, and uses of various herbal plants.<br>
+                🌍 **Explore:** Interact with **3D plant models** for a more immersive experience.<br>
+                🔍 **Search & Filter:** Easily find plants based on their benefits and properties.
+            </p>
+        </section>
+
+        <section id="plants">
+            <h2>Interactive 3D Models</h2>
+            <!-- Tulsi -->
+            <div id="tulsi" class="model-container">
+                <model-viewer src="models/tulsi.glb" alt="Tulsi" auto-rotate camera-controls></model-viewer>
+                <div class="plant-info">
+                    <h3>Tulsi (Ocimum sanctum)</h3>
+                    <p><strong>Common Names:</strong> Holy Basil, Sacred Basil</p>
+                    <p><strong>Habitat:</strong> Native to India, commonly found in gardens.</p>
+                    <p><strong>Medicinal Uses:</strong> Known for its anti-inflammatory, anti-viral, and antioxidant properties.</p>
+                    <p><strong>Cultivation:</strong> Prefers warm climates and well-drained soil. Grows well in pots or garden beds.</p>
+                    <img src="images/Tulsi.jpg" alt="Tulsi Plant">
+                    <br>
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4296439/" class="learn-more">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Ashwagandha -->
+            <div id="ashwagandha" class="model-container">
+                <model-viewer src="models/Ahwagandha.glb" alt="Ashwagandha" auto-rotate camera-controls></model-viewer>
+                <div class="plant-info">
+                    <h3>Ashwagandha (Withania somnifera)</h3>
+                    <p><strong>Common Names:</strong> Indian Ginseng, Winter Cherry</p>
+                    <p><strong>Habitat:</strong> Native to India, grows well in arid regions.</p>
+                    <p><strong>Medicinal Uses:</strong> Adaptogen, helps reduce stress and anxiety, boosts immunity.</p>
+                    <p><strong>Cultivation:</strong> Prefers dry, well-drained soil and full sunlight.</p>
+                    <img src="images/Ashwagandha.jpeg" alt="Ashwagandha Plant">
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3573577/" class="learn-more">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Turmeric -->
+            <div id="turmeric" class="model-container">
+                <model-viewer src="models/Turmeric.glb" alt="Turmeric" auto-rotate camera-controls></model-viewer>
+                <div class="plant-info">
+                    <h3>Turmeric (Curcuma longa)</h3>
+                    <p><strong>Common Names:</strong> Haldi, Indian Saffron</p>
+                    <p><strong>Habitat:</strong> Native to Southeast Asia, requires a warm, humid climate.</p>
+                    <p><strong>Medicinal Uses:</strong> Anti-inflammatory, antioxidant, used in digestive health.</p>
+                    <p><strong>Cultivation:</strong> Grows in rich, well-drained soil with ample rainfall.</p>
+                    <img src="images/turmeric.jpg" alt="Turmeric Plant">
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5664031/" class="learn-more">Learn More</a>
+                </div>
+            </div>
+            <!-- Cinnamon -->
+            <div id="cinnamon" class="model-container">
+                <model-viewer src="models/Cinnamon.glb" alt="Cinnamon" auto-rotate camera-controls></model-viewer>
+                <div class="plant-info">
+                    <h3>Cinnamon (Cinnamomum verum)</h3>
+                    <p><strong>Common Names:</strong> Ceylon Cinnamon, True Cinnamon</p>
+                    <p><strong>Habitat:</strong> Native to Sri Lanka, thrives in tropical climates.</p>
+                    <p><strong>Medicinal Uses:</strong> Helps regulate blood sugar levels, has anti-inflammatory properties.</p>
+                    <p><strong>Cultivation:</strong> Prefers warm, humid environments with well-drained soil.</p>
+                    <img src="images/cinnamon.jpeg" alt="Cinnamon Plant">
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4003790/" class="learn-more">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Cardamom -->
+            <div id="cardamom" class="model-container">
+                <model-viewer src="models/Cardamom.glb" alt="Cardamom" auto-rotate camera-controls></model-viewer>
+                <div class="plant-info">
+                    <h3>Cardamom (Elettaria cardamomum)</h3>
+                    <p><strong>Common Names:</strong> True Cardamom</p>
+                    <p><strong>Habitat:</strong> Native to India, grows in tropical and subtropical climates.</p>
+                    <p><strong>Medicinal Uses:</strong> Supports digestive health, has antimicrobial properties.</p>
+                    <p><strong>Cultivation:</strong> Requires a moist, tropical climate and well-drained soil.</p>
+                    <img src="images/Cardamom.jpg" alt="Cardamom Plant">
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10346154/" class="learn-more">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Clove -->
+            <div id="clove" class="model-container">
+                <model-viewer src="models/cloven.glb" alt="Clove" auto-rotate camera-controls></model-viewer>
+                <div class="plant-info">
+                    <h3>Clove (Syzygium aromaticum)</h3>
+                    <p><strong>Common Names:</strong> Clove Buds</p>
+                    <p><strong>Habitat:</strong> Native to Indonesia, thrives in tropical climates.</p>
+                    <p><strong>Medicinal Uses:</strong> Used for pain relief, has antibacterial and antioxidant properties.</p>
+                    <p><strong>Cultivation:</strong> Prefers warm, humid conditions with rich, well-drained soil.</p>
+                    <img src="images/clove.jpg" alt="Clove Plant">
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3074903/" class="learn-more">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="search">
+            <h2>Search & Filter Plants</h2>
+            <input type="text" id="search-input" placeholder="Search for plants...">
+            <button onclick="searchPlants()">Search</button>
+            <div id="search-results"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://forms.gle/Gwo8JcMtH9HYHFid9" target="_blank" 
+               style="display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-align: center; text-decoration: none; border-radius: 5px; margin-right: 10px; transition: background-color 0.3s;"
+               onmouseover="this.style.backgroundColor='#45a049';" 
+               onmouseout="this.style.backgroundColor='#4CAF50';">Fill out the form to suggest a herbal plant to be added to the webpage</a>
+        
+            <a href="https://www.appsheet.com/start/e20af946-e7a9-47fe-b749-65c928fbea09" target="_blank" 
+               style="display: inline-block; padding: 10px 20px; background-color: #008CBA; color: white; text-align: center; text-decoration: none; border-radius: 5px; transition: background-color 0.3s;"
+               onmouseover="this.style.backgroundColor='#66bb6a';" 
+               onmouseout="this.style.backgroundColor='#008CBA';">View suggested herbal plants</a>
+        </p>     
+        <p>&copy; Virtual Herbal Garden-(At 2k25-Hackathon By TID: T064)</p>
+        <p>Made by <a >Team Mad Developers</a></p>
+    </footer>
+
+    <script>
+        function searchPlants() {
+            const input = document.getElementById('search-input').value.toLowerCase();
+            const resultsContainer = document.getElementById('search-results');
+            resultsContainer.innerHTML = '';
+            const plants = [
+                { id: 'tulsi', name: 'Tulsi' },
+                { id: 'ashwagandha', name: 'Ashwagandha' },
+                { id: 'turmeric', name: 'Turmeric' },
+                { id: 'cinnamon', name: 'Cinnamon' },
+                { id: 'cardamom', name: 'Cardamom' },
+                { id: 'clove', name: 'Clove' }
+                /* If need Add More Plants For Herbal Treatement*/
+            ];
+            const results = plants.filter(plant => plant.name.toLowerCase().includes(input));
+            if (results.length > 0) {
+                results.forEach(result => {
+                    const plantSection = document.getElementById(result.id);
+                    if (plantSection) {
+                        resultsContainer.appendChild(createResultElement(result));
+                    }
+                });
+                resultsContainer.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                resultsContainer.innerHTML = '<p>No plants found.</p>';
+            }
+        }
+        function createResultElement(result) {
+            const resultElement = document.createElement('div');
+            resultElement.className = 'result';
+            resultElement.innerHTML = `<p>Found: <a href="#${result.id}" onclick="scrollToPlant('${result.id}')">${result.name}</a></p>`;
+            return resultElement;
+        }
+
+        function scrollToPlant(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+        const header = document.querySelector("header h1");
+        const originalText = "Welcome to Virtual Herbal Garden";
+        header.textContent = originalText;
+    });
+    </script>
+</body>
+</html>
